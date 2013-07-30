@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D478A80F-462B-4725-B6CB-15B2A1A61F2A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DWE.MapEditor</RootNamespace>
+    <AssemblyName>DofusWorldEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Inbox.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>DWE.MapEditor.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=6.3.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>H:\Programmation\Développements\SunDofus\Assemblies\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpZipLib, Version=0.81.0.1407, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>H:\Programmation\Développements\D.W.E\D.W.E\bin\Debug\SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="SwfDotNet.IO">
+      <HintPath>H:\Programmation\Développements\DofusMapEditor\bin\Debug\SwfDotNet.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CL\Cell.cs" />
+    <Compile Include="CL\Configuration.cs" />
+    <Compile Include="CL\Database.cs" />
+    <Compile Include="CL\Manager.cs" />
+    <Compile Include="CL\SWFFile.cs" />
+    <Compile Include="CL\Web.cs" />
+    <Compile Include="Frames\EntryFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frames\EntryFrame.Designer.cs">
+      <DependentUpon>EntryFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frames\LoadingFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frames\LoadingFrame.Designer.cs">
+      <DependentUpon>LoadingFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frames\MainFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frames\MainFrame.Designer.cs">
+      <DependentUpon>MainFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frames\MapFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frames\MapFrame.Designer.cs">
+      <DependentUpon>MapFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frames\MapOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frames\MapOptions.Designer.cs">
+      <DependentUpon>MapOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frames\OpenFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frames\OpenFrame.Designer.cs">
+      <DependentUpon>OpenFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frames\Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frames\Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frames\TilesManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frames\TilesManager.Designer.cs">
+      <DependentUpon>TilesManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frames\UpdateFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frames\UpdateFrame.Designer.cs">
+      <DependentUpon>UpdateFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frames\EntryFrame.resx">
+      <DependentUpon>EntryFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frames\LoadingFrame.resx">
+      <DependentUpon>LoadingFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frames\MainFrame.resx">
+      <DependentUpon>MainFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frames\MapFrame.resx">
+      <DependentUpon>MapFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frames\MapOptions.resx">
+      <DependentUpon>MapOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frames\OpenFrame.resx">
+      <DependentUpon>OpenFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frames\Options.resx">
+      <DependentUpon>Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frames\TilesManager.resx">
+      <DependentUpon>TilesManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frames\UpdateFrame.resx">
+      <DependentUpon>UpdateFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\directory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Inbox.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
