@@ -167,6 +167,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.manifest" />
+    <None Include="Datas\datas.rar" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -185,6 +186,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Inbox.ico" />
+    <Content Include="Librairies\log4net.dll" />
+    <Content Include="Librairies\MySql.Data.dll" />
+    <Content Include="Librairies\SwfDotNet.IO.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

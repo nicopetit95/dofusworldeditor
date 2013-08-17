@@ -37,7 +37,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -113,21 +113,22 @@
             this.label8.TabIndex = 8;
             this.label8.Text = "nicolas.petit95615 (Skype)";
             // 
-            // label9
+            // label4
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(31, 245);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(150, 13);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "nicolaspetit@npdev.eu (Email)";
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(12, 258);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(368, 13);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "DWE est développé pour être exclusivement compatible avec SUNDOFUS !";
             // 
             // EntryFrame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(389, 268);
-            this.Controls.Add(this.label9);
+            this.ClientSize = new System.Drawing.Size(389, 285);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -156,6 +157,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label4;
     }
 }
